@@ -1,9 +1,9 @@
-type T = {
+type User = {
   name: string;
   age: number;
 };
 
-function createUser({ name, age }: T): T & { isAdmin: boolean } {
+function createUser({ name, age }: User): User & { isAdmin: boolean } {
   return {
     name,
     age,
