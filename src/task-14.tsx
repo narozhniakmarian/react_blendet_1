@@ -1,1 +1,7 @@
-// task-14.tsx\n\nexport default function Task14() {\n  return <div>Task 14</div>;\n}
+function fetchMessage(): Promise<string> {
+  return new Promise((resolve) => {
+    resolve("Hello from server!");
+  });
+}
+
+fetchMessage().then((message) => console.log(message));

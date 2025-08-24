@@ -1,1 +1,2 @@
-// task-4.tsx\n\nexport default function Task4() {\n  return <div>Task 4</div>;\n}
+const dimensions: number[] = [1920, 1080];
+console.log(dimensions);

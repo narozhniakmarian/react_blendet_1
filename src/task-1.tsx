@@ -1,1 +1,13 @@
-// task-1.tsx\n\nexport default function Task1() {\n  return <div>Task 1</div>;\n}
+type Settings = {
+  darkMode: boolean;
+  fontSize: number;
+  language: string;
+};
+
+const settings: Settings = {
+  darkMode: true,
+  fontSize: 16,
+  language: "en",
+};
+
+console.log(settings);

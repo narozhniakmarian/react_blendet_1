@@ -1,1 +1,9 @@
-// task-3.tsx\n\nexport default function Task3() {\n  return <div>Task 3</div>;\n}
+type User = {
+  readonly id: string;
+  name: string;
+  age: number;
+  active: boolean;
+};
+const user: User = { id: "1", name: "Charlie", age: 25, active: true };
+
+console.log(user);

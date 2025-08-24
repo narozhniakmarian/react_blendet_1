@@ -1,1 +1,11 @@
-// task-2.tsx\n\nexport default function Task2() {\n  return <div>Task 2</div>;\n}
+type Currency = "USD" | "EUR" | "UAH";
+
+type ConvertParams = {
+  amount: number;
+  currency: Currency;
+};
+
+function convertCurrency({ amount, currency }: ConvertParams): void {
+  console.log(`Converting ${amount} to ${currency}`);
+}
+convertCurrency({ amount: 250, currency: "EUR" });

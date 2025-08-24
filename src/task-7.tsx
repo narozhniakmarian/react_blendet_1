@@ -1,1 +1,9 @@
-// task-7.tsx\n\nexport default function Task7() {\n  return <div>Task 7</div>;\n}
+interface User {
+  name: string;
+  age: number;
+}
+const users: User[] = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+];
+console.log(users);
